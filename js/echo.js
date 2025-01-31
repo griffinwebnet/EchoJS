@@ -1,4 +1,4 @@
-// Core EchoJS Framework with optimized feature set
+// Core EchoJS Framework
 class EchoJS {
   constructor() {
     this._routes = new Map();
@@ -8,7 +8,6 @@ class EchoJS {
     this.defaultLayout = null;
     this.notFoundConfig = null;
     
-    // Simplified config - removed templateBasePath
     this.config = {
       debug: false,
       cacheTemplates: true
@@ -17,7 +16,7 @@ class EchoJS {
     // For method chaining
     this._currentContext = this;
 
-    // Performance optimization: Pre-bind methods
+    // Pre-bind methods
     this.handleRouteChange = this.handleRouteChange.bind(this);
   }
 
