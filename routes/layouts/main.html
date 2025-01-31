@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EchoJS App</title>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-white shadow">
+            <div class="echo-container flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="./img/EchoJS.png" alt="EchoJS Logo" class="h-8 w-8 mr-3">
+                    <h1 class="text-3xl font-bold text-gray-900">{{title}}</h1>
+                </div>
+                <a href="#/login" class="echo-btn">
+                    Login
+                </a>
+            </div>
+        </header>
+
+        <main class="flex-grow">
+            <div class="echo-container">
+                <echo-content></echo-content>
+            </div>
+        </main>
+
+        <footer class="bg-white">
+            <div class="echo-container">
+                <p class="text-center text-gray-500 text-sm">
+                    Built with EchoJS
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
